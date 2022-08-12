@@ -1,0 +1,35 @@
+
+union PlayerPayload = PlayerSuccessPayload | PlayerFailedPayload
+
+type PlayerFailedPayload {
+    error: String!
+}
+
+type PlayerSuccessPayload {
+    message: String!
+    player : Player!
+}
+
+type Query {
+    getAllPlayers: [Player]
+}
+
+type Mutation{
+    AddPlayer(player: PlayerInput): PlayerPayload!
+    DeletePlayer(id : ID!): PlayerPayload!
+}
+
+input PlayerInput {
+    name: String!
+    surname: String!
+    position: String!
+}
+
+type Player {
+    id: ID!
+    name: String!
+    surname: String!
+    position: String!
+}
+
+
