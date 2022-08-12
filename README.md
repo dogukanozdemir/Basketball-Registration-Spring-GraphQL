@@ -1,11 +1,20 @@
-# Basketball Team Registration app with Spring Boot and GraphQL
+# Project Overview
 
 This a spring Boot application that can be used for Basketball team registrations.
 A user can add a player, delete a player or display all of the players in the system.
 The project offers the newest approach for testing Spring GraphQL applications using `spring-graphql-test` and `GraphQlTester`
 Specifically, Integration testing with JUnit5.
 
-# How does GrapQL work?
+# Table of Contents
+1. [How does GraphQL](#graphql)
+2. [GraphQL Schema](#schema)
+3. [Types](#types)
+4. [Exceptions](#exceptions)
+5. [Installation](#installation)
+6. [License](#license)
+
+
+# How does GrapQL work? <a name="graphql"></a>
 
 ![GraphQL](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8LEvP0aLNOz_5C7Qc0AQPXYLfENHxxzzQ2p8rfZjsqmRtRO548OuLdlskrA6VgHB0A&usqp=CAU)
 
@@ -15,7 +24,7 @@ This also suffers when the client needs data from multiple resources at the same
 
 GraphQL offers a solution to both of these problems. It allows the client to specify exactly what data it desires, including from navigating child resources in a single request, and allows for multiple queries in a single request.
 
-# GraphQL Schema
+### GraphQL Schema <a name="schema"></a>
 
 ```graphql
 
@@ -62,7 +71,7 @@ query {
 
 ```
 
-# Types
+### Types <a name="types"></a>
 
 `union PlayerPayload = PlayerSuccessPayload | PlayerFailedPayload`
 
@@ -81,7 +90,7 @@ type PlayerSuccessPayload {
 
 ```
 
-# Payload Exceptions
+### Payload Exceptions <a name="exceptions"></a>
 
 - **Maximum number of players reached**:
   
@@ -197,7 +206,7 @@ type PlayerSuccessPayload {
   
   ```
   
-# Installation
+### Installation <a name="installation"></a>
   
   Clone the repository to your directory of your choice.
   For users of Intellij IDE:
@@ -208,6 +217,6 @@ type PlayerSuccessPayload {
   To run the Integration test, run `PlayerControllerIntTest.java` and the program should test all of the endpoints and edge cases.
   
 
-# License
+### License <a name="license"></a>
 
  This project is licensed under the terms of the MIT license.
