@@ -14,7 +14,7 @@ Specifically, Integration testing with JUnit5.
 6. [License](#license)
 
 
-# How does GrapQL work? <a name="graphql"></a>
+# How does GraphQL work? <a name="graphql"></a>
 
 ![GraphQL](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8LEvP0aLNOz_5C7Qc0AQPXYLfENHxxzzQ2p8rfZjsqmRtRO548OuLdlskrA6VgHB0A&usqp=CAU)
 
