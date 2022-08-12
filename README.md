@@ -213,7 +213,10 @@ type PlayerSuccessPayload {
   
   `File -> Open -> /path/to/your/directory` 
   
-  To run the application, run `BasketballApplication.java` and the program should run on `localhost:8080/graphiql`
+  To test the application with GraphiQL, run `BasketballApplication.java` and the program should run on `localhost:8080/graphiql`
+  
+  The default endpoint for requests is `http://localhost:8080/graphql`
+  
   To run the Integration test, run `PlayerControllerIntTest.java` and the program should test all of the endpoints and edge cases.
   
 
