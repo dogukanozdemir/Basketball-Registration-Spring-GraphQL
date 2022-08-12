@@ -5,6 +5,10 @@ A user can add a player, delete a player or display all of the players in the sy
 The project offers the newest approach for testing Spring GraphQL applications using `spring-graphql-test` and `GraphQlTester`
 Specifically, Integration testing with JUnit5.
 
+The MySQL database for the project is hosted on [freesqldatabase.com](freesqldatabase.com)
+
+You can find details in `src/main/resources/application.properties`.
+
 # Table of Contents
 1. [How does GraphQL](#graphql)
 2. [GraphQL Schema](#schema)
